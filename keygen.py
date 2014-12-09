@@ -3,10 +3,13 @@
 #author :terrameijar
 
 import random
+from sys import argv
 
-#num = 6 #number of characters to generate
+
+#accepts one argument, which is the desired password length
+
 try:
-    a = int(raw_input("How long[characters] do you want your password to be? "))
+    a = int(argv[1])
     if a == 0:
     	print("Then what's the point of using a password generator in the first place huh?")
     	quit()
